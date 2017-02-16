@@ -49,7 +49,7 @@ var DialogAction = (function () {
             var valid = false;
             if (r.response) {
                 try {
-                    valid = validator(r.response);
+                    valid = validator(r.response, s.dialogData);
                 }
                 catch (e) {
                     s.error(e);
